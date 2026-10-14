@@ -1,0 +1,13 @@
+id,message,reference_intent,label_status,category,provenance,needs_context,notes
+1,بكرة الدوام أون لاين,info_only,curated_reference,informational_with_time,synthetic_demo,false,إخبار عن نمط الدوام دون طلب أو تغيير مهمة محفوظة
+2,السلام عليكم لاحد يجي بكرة,,needs_context,negation_ambiguous,synthetic_demo,true,قد تكون تعليمات إلغاء حضور أو معلومة؛ يلزم سياق الحدث السابق
+3,تم اعتماد التقرير النهائي,info_only,curated_reference,approval_status,synthetic_demo,false,حالة اعتماد مكتملة وليست أمر إلغاء
+4,ارسلي التقرير قبل الساعة التاسعة مساء,new_task,curated_reference,deadline_new_task,synthetic_demo,false,طلب جديد بموعد نهائي وليس إعادة جدولة
+5,الاجتماع تأجل للخميس,reschedule,curated_reference,explicit_reschedule,synthetic_demo,false,تغيير صريح لموعد اجتماع قائم
+6,خلاص لا ترسلين التقرير,cancellation,curated_reference,negation_cancellation,synthetic_demo,false,سحب صريح لفعل الإرسال السابق
+7,ترى الاجتماع صار الأربعاء بدل الثلاثاء,reschedule,curated_reference,saudi_dialect_reschedule,synthetic_demo,false,بدل تربط الموعد القديم بالجديد
+8,خلصنا التقرير وأرسلناه,info_only,curated_reference,completion_status,synthetic_demo,false,إخبار بإنجاز وإرسال ولا يطلب إجراءً جديدًا
+9,لا تنسين ترسلين العرض قبل الظهر,new_task,curated_reference,negation_scope,synthetic_demo,false,لا تنسين تذكير إيجابي وليس إلغاء
+10,مو اليوم خلي التسليم الأحد,reschedule,curated_reference,implicit_reschedule,synthetic_demo,false,نفي الموعد الأول يتبعه موعد بديل
+11,اعتمدي النسخة وأرسليها للفريق,new_task,curated_reference,multiple_actions,synthetic_demo,false,رسالة واحدة تتضمن فعلين مطلوبين
+12,خلاص خلّوه الخميس الساعة 2,,needs_context,anaphora_ambiguous,synthetic_demo,true,الضمير يحتاج مهمة سابقة قبل تأكيد إعادة الجدولة

@@ -1,0 +1,5 @@
+# Minimal local inference dependencies. Training-only packages remain in
+# requirements-transformer.txt so the FastAPI runtime stays practical on 8 GB Macs.
+torch>=2.3,<3
+transformers>=4.45,<5
+safetensors>=0.4,<1

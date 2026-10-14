@@ -1,0 +1,22 @@
+.venv/
+.venv312/
+__pycache__/
+.pytest_cache/
+.coverage
+.DS_Store
+.env
+frontend/.env
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+# The validated classical checkpoints are small and committed for real inference.
+# The fine-tuned FIL_AI_CAMeLBERT checkpoint is tracked with Git LFS.
+models/camelbert_fil_ai/
+models/embedding_cache/
+models/**/checkpoint-*/
+data/*.db
+data/raw/**/*.tar.gz
+data/raw/**/*.jsonl
+postgres_data/

@@ -1,0 +1,13 @@
+﻿message,true_intent,predicted_intent
+عندي طلب بسيط: اكتبي مقدمة عربية للمبادرة.,new_task,cancellation
+نشكر جميع الحضور على مشاركتهم.,info_only,new_task
+ما في داعي تتواصلين مع المورد، انتهى الطلب.,cancellation,new_task
+مو اليوم، خلي تسليم المستندات صباح الاثنين.,reschedule,cancellation
+بخصوص مراجعة التقرير، بنقدمها ليوم الأحد.,reschedule,cancellation
+ما يحتاج ترفعين النموذج بعد القرار الجديد.,cancellation,new_task
+أبغى ملخص صفحة واحدة عن نتائج المشروع.,new_task,info_only
+معلومة سريعة: الدورات المسائية تبدأ عادة بعد الخامسة.,info_only,reschedule
+مطلوب من جميع المشاركين تسليم الواجب يوم الأربعاء.,new_task,reschedule
+المقر الرئيسي انتقل إلى المبنى الجديد.,info_only,reschedule
+لا تجين الساعة ثمان، تعالي عشر ونص.,reschedule,cancellation
+تمت إضافة أعضاء جدد إلى الفريق.,info_only,reschedule

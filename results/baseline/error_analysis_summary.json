@@ -1,0 +1,58 @@
+{
+  "warning": "Synthetic-data holdout only; these metrics cannot establish real-world accuracy.",
+  "dataset_rows": 96,
+  "holdout_rows": 24,
+  "correct_predictions": 12,
+  "misclassifications": 12,
+  "accuracy": 0.5,
+  "macro_precision": 0.52381,
+  "macro_recall": 0.5,
+  "macro_f1": 0.494353,
+  "class_count_min": 24,
+  "class_count_max": 24,
+  "class_imbalance_ratio_max_to_min": 1.0,
+  "duplicate_audit": {
+    "exact_duplicate_groups": 0,
+    "normalized_variant_groups": 0,
+    "duplicate_rows_involved": 0,
+    "conflicting_label_groups": 0
+  },
+  "saved_model_predictions_match_csv": true,
+  "largest_error_routes": [
+    {
+      "true_intent": "info_only",
+      "predicted_intent": "reschedule",
+      "count": 3
+    },
+    {
+      "true_intent": "reschedule",
+      "predicted_intent": "cancellation",
+      "count": 3
+    },
+    {
+      "true_intent": "cancellation",
+      "predicted_intent": "new_task",
+      "count": 2
+    },
+    {
+      "true_intent": "info_only",
+      "predicted_intent": "new_task",
+      "count": 1
+    },
+    {
+      "true_intent": "new_task",
+      "predicted_intent": "cancellation",
+      "count": 1
+    },
+    {
+      "true_intent": "new_task",
+      "predicted_intent": "info_only",
+      "count": 1
+    },
+    {
+      "true_intent": "new_task",
+      "predicted_intent": "reschedule",
+      "count": 1
+    }
+  ]
+}

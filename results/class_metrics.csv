@@ -1,0 +1,5 @@
+﻿intent,one_vs_rest_accuracy,precision,recall,f1_score,support,true_positive,false_positive,false_negative,true_negative
+new_task,0.75,0.5,0.5,0.5,6,3,3,3,15
+reschedule,0.708333,0.428571,0.5,0.461538,6,3,4,3,14
+cancellation,0.75,0.5,0.666667,0.571429,6,4,4,2,14
+info_only,0.791667,0.666667,0.333333,0.444444,6,2,1,4,17

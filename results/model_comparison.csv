@@ -1,0 +1,3 @@
+﻿model,status,accuracy,macro_f1,weighted_f1
+baseline_v1,evaluated_on_preserved_synthetic_holdout,0.5,0.4943528693528694,0.4943528693528694
+classical_v2,evaluated_on_preserved_synthetic_holdout,0.5,0.46955128205128205,0.4695512820512821

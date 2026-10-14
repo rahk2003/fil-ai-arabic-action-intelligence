@@ -1,0 +1,17 @@
+﻿split,intent,count,percentage
+full_synthetic_dataset,new_task,24,25.0
+full_synthetic_dataset,reschedule,24,25.0
+full_synthetic_dataset,cancellation,24,25.0
+full_synthetic_dataset,info_only,24,25.0
+inferred_training_split,new_task,18,25.0
+inferred_training_split,reschedule,18,25.0
+inferred_training_split,cancellation,18,25.0
+inferred_training_split,info_only,18,25.0
+synthetic_holdout_true,new_task,6,25.0
+synthetic_holdout_true,reschedule,6,25.0
+synthetic_holdout_true,cancellation,6,25.0
+synthetic_holdout_true,info_only,6,25.0
+synthetic_holdout_predicted,new_task,6,25.0
+synthetic_holdout_predicted,reschedule,7,29.167
+synthetic_holdout_predicted,cancellation,8,33.333
+synthetic_holdout_predicted,info_only,3,12.5

@@ -1,0 +1,25 @@
+﻿message,true_intent,predicted_intent
+تغير وقت المقابلة من العصر إلى الساعة تسعة الصباح.,reschedule,reschedule
+تم إلغاء الموعد وحذف الحجز.,cancellation,cancellation
+عندي طلب بسيط: اكتبي مقدمة عربية للمبادرة.,new_task,cancellation
+نشكر جميع الحضور على مشاركتهم.,info_only,new_task
+ما في داعي تتواصلين مع المورد، انتهى الطلب.,cancellation,new_task
+شيكي على رابط الاستبيان وأرسليه للفريق.,new_task,new_task
+تم تحديث عنوان الجلسة على موقع الفعالية.,info_only,info_only
+مو اليوم، خلي تسليم المستندات صباح الاثنين.,reschedule,cancellation
+بخصوص مراجعة التقرير، بنقدمها ليوم الأحد.,reschedule,cancellation
+ما يحتاج ترفعين النموذج بعد القرار الجديد.,cancellation,new_task
+إذا وصلتك الفاتورة أرسليها للمحاسبة.,new_task,new_task
+تم إلغاء التكليف الخاص بتجهيز العرض.,cancellation,cancellation
+أبغى ملخص صفحة واحدة عن نتائج المشروع.,new_task,info_only
+نحتاج منك ترفعين شهادة الدورة على البوابة اليوم.,new_task,new_task
+غيرنا تاريخ الزيارة وصارت يوم 24 بدل 22.,reschedule,reschedule
+معلومة سريعة: الدورات المسائية تبدأ عادة بعد الخامسة.,info_only,reschedule
+مطلوب من جميع المشاركين تسليم الواجب يوم الأربعاء.,new_task,reschedule
+ترى طلب الترجمة السابق ما عاد مطلوب.,cancellation,cancellation
+المقر الرئيسي انتقل إلى المبنى الجديد.,info_only,reschedule
+للإحاطة: جميع الملفات موجودة في المجلد المشترك.,info_only,info_only
+تم تأجيل الورشة إلى الاثنين القادم.,reschedule,reschedule
+لا تجين الساعة ثمان، تعالي عشر ونص.,reschedule,cancellation
+تمت إضافة أعضاء جدد إلى الفريق.,info_only,reschedule
+لا تكملين المهمة، توقف المشروع حاليًا.,cancellation,cancellation

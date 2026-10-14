@@ -1,0 +1,41 @@
+﻿intent,rank,feature,coefficient
+cancellation,1,لغ,0.307933
+cancellation,2,لغا,0.210065
+cancellation,3,غا,0.210065
+cancellation,4, إلغا,0.164819
+cancellation,5,إلغ,0.164819
+cancellation,6, إلغ,0.164819
+cancellation,7,إلغا,0.164819
+cancellation,8,وقف,0.159919
+cancellation,9,قف,0.159919
+cancellation,10,ب ,0.151361
+info_only,1,متا,0.169888
+info_only,2, وص,0.16391
+info_only,3, وصل,0.16391
+info_only,4,وصل,0.16391
+info_only,5, لل,0.14962
+info_only,6,من,0.146446
+info_only,7,مت,0.14275
+info_only,8,وص,0.139137
+info_only,9,صل,0.136129
+info_only,10,ام ,0.135177
+new_task,1,ين ,0.355357
+new_task,2,ين,0.285826
+new_task,3,ن ,0.197963
+new_task,4,ي ,0.194346
+new_task,5,؟ ,0.183543
+new_task,6,ل ,0.180057
+new_task,7,ار,0.172964
+new_task,8,وا,0.168882
+new_task,9,عي,0.156567
+new_task,10, مع,0.151799
+reschedule,1,بد,0.296492
+reschedule,2,عد ,0.291278
+reschedule,3,موع,0.258413
+reschedule,4,وعد,0.258413
+reschedule,5,وعد ,0.258413
+reschedule,6,موعد,0.258413
+reschedule,7,موعد ,0.258413
+reschedule,8,عد,0.258058
+reschedule,9, إلى,0.237042
+reschedule,10, إلى ,0.237042

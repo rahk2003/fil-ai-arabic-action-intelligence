@@ -1,0 +1,8 @@
+# Use Python 3.11 or 3.12. Install PyTorch using the current official macOS/Colab instructions.
+torch>=2.3,<3
+transformers>=4.45,<5
+accelerate>=1,<2
+datasets>=3.2,<4
+scikit-learn>=1.4,<2
+pandas>=2,<3
+sentence-transformers>=3,<6

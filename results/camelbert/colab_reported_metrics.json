@@ -1,0 +1,16 @@
+{
+  "evaluation_rows": 125,
+  "data_provenance": "synthetic",
+  "source": "user-reported Google Colab evaluation",
+  "baseline": {
+    "accuracy": 0.72,
+    "macro_f1_approx": 0.719
+  },
+  "camelbert": {
+    "accuracy": 0.896,
+    "macro_f1_approx": 0.895
+  },
+  "independent_from_training": "not established",
+  "real_world_accuracy_claim": false,
+  "note": "The separate 24-row 95.8% result overlaps the 500-message CAMeLBERT fine-tuning corpus and must not be presented as an independent comparison."
+}

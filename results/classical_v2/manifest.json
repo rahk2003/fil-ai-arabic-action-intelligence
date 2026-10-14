@@ -1,0 +1,13 @@
+{
+  "model": "word_char_lr",
+  "model_path": "models/intent_classical_v2.joblib",
+  "data_source": "96 manually authored synthetic messages",
+  "development_rows": 72,
+  "selection_train_rows": 54,
+  "selection_validation_rows": 18,
+  "preserved_test_rows": 24,
+  "random_seed": 42,
+  "test_accuracy": 0.5,
+  "test_macro_f1": 0.469551,
+  "warning": "Synthetic-only experiment; not a real-world performance estimate."
+}

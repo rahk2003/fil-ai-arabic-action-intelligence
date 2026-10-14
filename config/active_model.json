@@ -1,0 +1,5 @@
+{
+  "model_path": "models/intent_baseline.joblib",
+  "reason": "classical_v2 did not improve macro-F1 on the preserved synthetic holdout",
+  "updated_after_evaluation": true
+}

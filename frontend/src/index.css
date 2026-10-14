@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+* { scrollbar-width: thin; scrollbar-color: #64748b transparent; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, textarea, select { font: inherit; }
+::selection { background: rgba(93, 228, 199, .35); }
+
+@layer components {
+  .panel { @apply rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-panel backdrop-blur dark:border-slate-800 dark:bg-slate-900/80; }
+  .label { @apply mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-300; }
+  .input { @apply w-full rounded-xl border border-slate-300 bg-white px-3.5 py-3 text-slate-900 outline-none transition focus:border-iris focus:ring-4 focus:ring-iris/10 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-iris px-4 py-3 font-semibold text-white transition hover:bg-violet-600 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-3 font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800; }
+}

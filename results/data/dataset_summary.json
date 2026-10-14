@@ -1,0 +1,44 @@
+{
+  "source": "AmazonScience/massive",
+  "source_url": "https://huggingface.co/datasets/AmazonScience/massive",
+  "license": "CC BY 4.0",
+  "locale": "ar-SA",
+  "split_counts": {
+    "train": 11514,
+    "validation": 2033,
+    "test": 2974
+  },
+  "total_rows": 16521,
+  "columns": [
+    "id",
+    "locale",
+    "partition",
+    "scenario",
+    "intent",
+    "utt",
+    "annot_utt",
+    "worker_id",
+    "slot_method",
+    "judgments",
+    "source_split"
+  ],
+  "scenarios": 18,
+  "intents": 60,
+  "missing_values": {
+    "id": 0,
+    "locale": 0,
+    "partition": 0,
+    "scenario": 0,
+    "intent": 0,
+    "utt": 0,
+    "annot_utt": 0,
+    "worker_id": 0,
+    "slot_method": 0,
+    "judgments": 0,
+    "source_split": 0
+  },
+  "normalized_duplicate_groups": 537,
+  "normalized_duplicate_rows": 1545,
+  "date_or_time_annotated_rows": 3180,
+  "warning": "MASSIVE labels are virtual-assistant intents, not FI'L AI workplace-action labels."
+}

@@ -1,0 +1,2 @@
+models/FIL_AI_CAMeLBERT/*.safetensors filter=lfs diff=lfs merge=lfs -text
+models/FIL_AI_CAMeLBERT/*.bin filter=lfs diff=lfs merge=lfs -text

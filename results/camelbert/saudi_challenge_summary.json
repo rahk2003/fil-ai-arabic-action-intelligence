@@ -1,0 +1,27 @@
+{
+  "data_provenance": "synthetic_demo_challenge_set",
+  "human_verified": false,
+  "scored_rows": 10,
+  "needs_context_rows": 2,
+  "metrics": {
+    "baseline": {
+      "identifier": "tfidf-logreg:intent_baseline",
+      "accuracy": 0.7,
+      "macro_f1": 0.5952380952380952,
+      "scored_rows": 10,
+      "mean_latency_ms": 1.8526979159408559
+    },
+    "camelbert": {
+      "identifier": "camelbert-da:FIL_AI_CAMeLBERT",
+      "accuracy": 0.6,
+      "macro_f1": 0.42857142857142855,
+      "scored_rows": 10,
+      "mean_latency_ms": 117.41215266859702
+    }
+  },
+  "limitations": [
+    "Small curated synthetic challenge set; not a real-world accuracy estimate.",
+    "Rows requiring conversation context are excluded from accuracy and F1.",
+    "This set must remain outside training and requires independent human review."
+  ]
+}

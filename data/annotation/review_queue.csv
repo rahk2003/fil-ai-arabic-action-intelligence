@@ -1,0 +1,501 @@
+﻿message_id,message,review_reason,intent,action_text,datetime_text,normalized_datetime,source,label_status,reviewer,notes
+massive-ar-SA-train-1,صحيني تسعة الصباح يوم الجمعة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2,حط منبه بعد ساعتين من الحين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-33,شيك متى يبدا العرض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=calendar_query; split=train
+massive-ar-SA-train-48,قل لي الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-49,قل لي الوقت في توقيت السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-60,وقف منبه سبعة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-62,تكفى سوي قائمة بالمنبهات الشغالة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-93,حط المنبه على اثنعش,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-94,حط منبه بعد أربعين دقيقة من الحين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-95,حط منبه على ثمنية كل يوم في الإسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-172,حط المنبه على عشرة الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-195,كم الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-196,أخبرني الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-202,ازيلي المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-203,ورني المنبهات اللي أنا حطيتها,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-204,هل عندي أي منبهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-205,وريني المنبهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-213,كم التاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-214,ما هو اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-215,قل لي موعد,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-233,حط منبه على أربعة العصر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-234,olly نبهني الساعة ثلاثة بعد الظهر اروح الحفلة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-235,نبهني ثلاثة بعد الظهر عشان أروح الحفلة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-236,أبي أعرف اذا ضبطت أنا منبه لرحلة الصبح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-238,عندي أي تنبيهات ولا لا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-270,كم الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-289,كم الساعة الآن في جيزان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-309,كم باقي يوم في هاذي السنة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-354,التاسع والعشرين مارس يأتي في أي يوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-356,ما منبهي التالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-357,رجاء قولي لي ما هي منبهاتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-358,في أي وقت بيرن المنبه حقي اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-359,هل يمكن أن تخبرني الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-364,ما هو التاريخ الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-394,اذا كان ظهر في خميس مشيط كم بيكون الوقت في الدمام,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-395,كم الفرق في الوقت بين توقيت مكة المكرمة و توقيت القدس,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-408,وش المنبهات اللي حطيتها أنا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-409,اقرائي لي منبهاتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-410,في أي وقت تم ضبط منبهاتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-416,حطلي منبه على ثمانية الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-417,حط منبه على أربعة العصر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-418,اضبط لي منبه يصحيني الساعة ثمنية وخمسة وأربعين الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-435,أي يوم في الشهر بيكون الثلوث الجاي,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-453,ماهو تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-463,ما هو اليوم,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-464,قول لي التاريخ والوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-466,سيري ما هو التاريخ,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-481,كم الساعة في المناطق الزمنية الثانية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-482,ما هي المنطقة الزمنية مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-487,كم الساعة في السعودية الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-488,كم الساعة الحين في السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-499,ما هو الوقت في سدير,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-500,كم الساعة في جيزان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-507,اكّدي وقت المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-509,وش المنبهات اللي عندي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-519,كم الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-520,ما هو الوقت الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-521,أعطيني الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-535,أبغى منبه يذكرني عالساعة وحده,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-537,شغل منبه تسعة الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-557,كم عدد المنبهات في القائمة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-558,أبعى أعرف اذا عندي أي منبهات لبكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-559,ما وضع المنبهات غدا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-561,ألغي منبه ثمنية الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-569,كم عيد ميلاد فيه يوم ثلاثة وعشرين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-570,ابي أعرف اذا السبت الثاني بيكون يوم اثنعش,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-571,هل عيد الفطر يوم واحد وعشرين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-572,ما هو التاريخ,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-589,ما هو الوقت في مكة المكرمة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-602,عاير منبه عشان ابدأ,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-603,غير المنبه وخله يرن نص الليل,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-611,تكفى حط المنبه على سبعة بكره الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-618,وش بيكون آخر يوم في الشهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-619,كم بتوقيت أم القرى,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-620,ما هو وقت القدس الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-648,هل يمكن أن تخبريني ما المنبهات التي قمت بضبطها,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-649,عندي أي منبهات مضبوطة اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-650,أبي أحط منبه كم المنبهات اللي ضبطتها أنا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-659,الوقت الآن في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-661,من فضلك هل يمكنني معرفة الوقت الذي ستكون فيه الساعة ستة بعد الظهر هنا في السعودية,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-662,هل يمكنك معرفة عدد ساعات الفارق بين الخبر و عسير,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-671,ممكن تقول لي كم التاريخ,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-672,هل يمكن أن تخبرني كم الساعة الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-673,كم الساعة الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-674,عرض الوقت الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-687,أعطني الوقت في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-688,أعطني الوقت في الرياض الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-721,حط منبه على الساعة أربعة بكره الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-722,عاير منبه عشان يقومني بعد خمس ساعات,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-723,عاير منبه يصحيني بعد ثلاثة ساعات,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-754,غير المنطقة الزمنية للرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-755,غير التوقيت في هذا الموقع لأم القرى,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-794,أكد منبه بكره الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-795,على أي وقت ضبطت المنبه حق بكرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-810,ما هو اليوم من الشهر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-838,ألغي التنبيهات اللي تصحيني هاذا الأسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-839,ألغي كل التنبيهات اللي تصحيني هاذا الأسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-845,وش المنبهات المضبوطه الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-846,وش التنبيهات اللي بتصحيني بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-847,أبي أعرف اذا فيه أي منبهات مضبوطة الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-863,المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-879,كم الساعة في مكة السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-880,كم الساعة في الخبر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-881,كم الساعة في العفيف,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-886,قولي الوقت الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-888,في أي وقت ننظر الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-894,طفي المنبه حق بكره الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-909,كم الساعة في جدَّة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-910,كم الساعة الحين في نجران,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-911,من فضلك قل لي الوقت الحالي في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-916,من فضلك قل لي كم الساعة الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-917,احذف منبه الصبح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-918,لو سمحت امسح منبه الصباح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-919,olly تكفى احذف منبه الصباح حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-941,تكفى اضبط المنبه حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-942,كم الساعة في الرياض الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-955,حط المنبه على الساعة خمسة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-956,اضبط المنبه حقي على ستة ونص الصبح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-957,اببك تضبط المنبه على ستة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-976,ما هي الساعة في الرياض الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1002,احذف منبه ثمنية الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1003,احذف المنبه حقي لبكره الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1004,تكفى طفي المنبه حقي هذا المسا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1013,كم ساعة فرق بين الرياض و مدينة جازان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1026,من فضلك وريني تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1036,أبي أعرف اذا ضبطت منبه الشغل بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1037,وش المنبهات اللي حطيتها ليوم الخميس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1099,متى الشهر الجاي اللي بيكون فيه واحد وثلاثين يوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1126,قول لي التاريخ,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1132,شغل المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1133,حط منبه على خمسة ونص الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1134,حط المنبه على الساعة خمسة الفجر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1137,تكفى قول لي الفعاليات حق اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=calendar_query; split=train
+massive-ar-SA-train-1141,هل هي التاسع والعشرين بالفعل,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1142,قول لي في أي يوم في الأسبوع احنا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1149,الوقت في محايل عسير الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1150,ما هو الوقت الحالي في جدة السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1183,امسح اثنعش الليل,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1190,اذا كان الوقت نص الليل في ينبع كم الوقت في الدوحة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1206,ألغي منبهي حق ثلاثة بعد الظهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1207,ألغي منبه ثلاثة بعد الظهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1226,أعطيني تاريخ الاثنين الأسبوع الثالث في هذا الشهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1233,كم الوقت في الطايف الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1235,ما هو الوقت في مكة عندما يكون وقتنا خمسة بعد الظهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1242,مرحبا كم الساعة الان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1248,هل يمكنك إخباري بتاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1253,من فضلك أعطني الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1262,متى موعد المنبه حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1263,كم منبه عندي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1267,قول لي كم الساعة الحين بتوقيت مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1273,هل يقع يوم الأحد في الخامس من ديسمبر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1274,تقدر تأكد إلغاء اجتماعي حق بكرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=calendar_query; split=train
+massive-ar-SA-train-1284,غير هذا إلى توقيت الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1285,أبغى أعرف كم الوقت بالزبط في الخبر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1286,ماذا سيكون الوقت الآن في الخبر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1287,ما هو الوقت الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1288,هل يمكنك إخباري بالوقت الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1304,يا أولي ما هو تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1305,مهلا ما هو تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1306,هل يمكن أن تخبرني ما هو تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1311,كم يفرق الوقت هنا عن نجران,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1338,وش المنبهات اللي رتبتها أنا لبكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1339,وش المنبهات اللي ضبطتها في الصباح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1340,هو الثمنطعش من أيام الاثنين أو الأحد,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1341,أي يوم بيكون عيد الفطر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1345,خمسون ألفا ومائتان وسبعة عشر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1347,مائة وخمسون ألف ومائتان وسبعة عشر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1348,ممكن تقول لي الوقت الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1384,كم تاريخ ثالث جمعة هالشهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1386,ما هو تاريخ يومي أربعاء قبل اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1393,الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1394,كم الساعة الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1395,كم الوقت في الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1420,قولي كم الساعة لو سمحت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1435,قول لي كم الساعة في عرعر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1436,ايش المنبهات اللي عندي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1437,خلني أشوف المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1438,وش المنبهات اللي عندي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1448,متى يوم التأسيس,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1453,غير اعدادات المنبه الأسبوعية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1484,راجع المنبهات اللي عندي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1485,سوي قائمة بكل المنبهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1503,اذا كانت الساعة أربعة العصر في الدمام كم بيكون الوقت في دبي,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1504,إنها الثامنة مساءاً في جدة كم الساعة في السعودية,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1536,ما هو الوقت الآن في مكة مقارنة الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1580,كم التاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1596,كم الساعة في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1603,شوف اذا أنا حطيت أي منبهات بكرة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1604,على أي وقت حطيت المنبه لبكره الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1605,ضبطت المنبه لبكره الصباح ولا لا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1606,يرجى تقديم الوقت الحالي في السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1608,قول لي الوقت الحين في السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1611,الوقت في الرياض من فضلك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1624,عاير المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1626,اضبط نغمة المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1633,وريني المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1634,أولي وريني المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1645,هل عندي أي منبهات معايرة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1656,ورني كل المنبهات المسجلة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1657,كم عدد المنبهات المعايرة الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1662,ما هو فارق التوقيت بين مكة و عسير,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1663,كم الفرق في الوقت بين تبوك و خميس مشيط,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1674,احذف منبه سبعة ونص الصباح يوم الإثنين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1676,احذف منبه ستة الصباح طوال الأسبوع في المستقبل,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1704,ما هو الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1705,هل يمكنك إخباري بالوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1720,حط منبه على ثمانية الصبح كل ثلوث في شهر مارس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1721,حط منبه على عشرة الصبح كل الأسبوع في شهر april,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1733,تأكد من منبه الإجتماع حق اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1762,ما هو الوقت في السعودية الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1767,تحويل ألفين وثلاثمائة وثلاثين من توقيت غرينيتش زائد أربعمائة وثلاثين توقيت غرينيتش مائتين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1768,تحويل ألف وثلاثين من التوقيت العالمي مائتان وثلاثون التوقيت العالمي صفر مائة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-1772,تكفى حط المنبه على خمسة العصر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1773,صحيني ستة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1795,كم التاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1797,اليوم يكون,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1806,كم دقيقة تمر أربعة العصر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1819,كم الساعة والتاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1850,ما هو الوقت في الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1851,كم ثانية متبقية لإكمال هذه ساعة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1854,ما الوقت الان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1863,هل عندي أي منبهات شغالة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1864,ابش المنبهات الشغالة الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1869,كم التاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1895,ضعي منبه في الخامسة صباحا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1912,عاير المنبه خمسة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-1922,كم الساعة في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1923,وريني الوقت الحالي في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1951,كم الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1952,كم الساعة في حائل,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-1975,هل قمت بضبط أي منبه لليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1976,إذا تم ضبط أي منبهات أعلمني بذلك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-1977,تكفى احذف المنبه اللي حطيته للصبح اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-1983,حط منبه قبل وقت أكلي بنص ساعة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2022,ما هو الوقت واليوم اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2023,الوقت والتاريخ الحاليين من فضلك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2027,يمكنك التحقق من الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2080,ابي اعرف اذا المنبه اللي يصحيني مضبوط على ستة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2081,حط المنبه حقي على ستة الصبح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2110,كم الساعة في الدمام الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2111,لمن تكون عشرة الليل هنا كم تكون الساعة في الخبر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-2135,متى موعد المنبه القادم,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2136,احذف منبه أربعة الفجر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-2145,هل عيد الأضحى سنة ألف وتسعمية واثنين وسبعين في نهاية أسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2147,افتح المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2155,ما هو الوقت الحالي الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2169,باخذ غفوة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-2170,غير المنبه حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-2180,وقت من فضلك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2181,قل لي الوقت الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2182,ما هو تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2183,كم تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2184,قل لي تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2193,اضبط منبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2194,صلح المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2195,عاير منبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2199,في أي أسبوع من السنة يبدأ موسم الصيف,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2228,أحتاج منك تحويل تسعة قبل الظهر توقيت بغداد إلى توقيت الرياض,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-2229,ما هو تسعة الصبح في توقيت اميركا عند توقيت السعودية,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-2276,صحيني أربعة الفجر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2277,منبه للساعة عشرة الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2278,حط منبه على ثمنية الصبح بعد اثنعشر أسبوع من اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2299,في أي تاريخ عيد الفطر هذه السنة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2300,أي يوم هو الجمعة ثلطعش هاذي السنة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2301,ما هو اليوم الذي يحتوي على أطول وقت في هاذي السنة وضح النهار,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2308,الساعة عشرة الصبح بتوقيت مكة المكرمة كم بتكون الساعة الحين بتوقيت القدس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-2329,أعطيني الوقت في الرياض الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2333,حط منبه لستة الصبح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2335,حط منبه وصحيني ستة الصبح بكرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2409,كم التاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2410,هل يمكنك إخباري بتاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2411,كم الساعة في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2413,هل لي أن أعرف الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2426,قل لي الوقت في السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2427,ما يمكن أن يكون الوقت في مصر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2429,حالة المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2430,تكفى شوف التنبيهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2456,كم الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2457,الوقت العالمي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2471,متى وقت الغروب,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2482,الوقت الحالي من فضلك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2485,كم الساعة في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2486,ما هو الوقت في عسير,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2504,اضبطي منبه على وقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2505,اضبط المنبه حقي عالوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2506,اضبط المنبه عالوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2507,حط المنبه على ستة المسا يوم الثلوث,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2508,ابغى أحط منبه للظهر الجمعة الجاية,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2552,انا بحاجة الى الوقت من اليوم,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2554,في أي يوم في الأسبوع بيكون عيد الفطر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2555,ايش تاريخ بكرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2556,ما هو تاريخ بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2565,حط منبه ليوم الأحد الساعة خمسة الفجر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2602,حطلي منبه على خمسة الفجر بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2603,حط المنبه بعد ساعتين من الحين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2604,حط منبه بعد ساعة من الحين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2607,هل اليوم ستة مارس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2612,ما اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2613,هل اليوم الرابع ولا الخامس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2632,اسمحوا لي أن أعرف تاريخ حق اليوم بالتنسيق الأمريكي,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2633,تاريخ اليوم لو سمحت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2671,ممكن تتأكد اذا عايرت المنبه حق بكرة الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2676,كم تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2677,أي تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2718,صحيني الساعة خمسة ونص,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2719,حط منبه على خمسة ونص,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-2782,العاشر من مارس يهبط في أي يوم من أيام الأسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2784,تاريخ كم بيكون اخر جمعة في الشهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2802,كم الساعة في الدوحة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2823,في أي يوم بيكون يوم التأسيس هاذي السنة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2826,كم عدد المنبهات اللي أنا ضبطتها,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2839,كم بيكون التاريخ يوم الإثنين,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2858,كم الساعة في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2860,olly الوقت في مكة المكرمة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2861,الوقت في ينبع,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2862,قل لي الوقت الآن في جيزان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2871,وش المنبهات المضبوطه ليا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2872,أبي أعرف اذا أنا ضبطت أي منبهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2873,هل عندي منبهات اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2877,وقفي المنبه اللي عايرته الساعة ثمانية الصبح بكرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-2878,وقف كل منبهات بكرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-2891,قل لي ما هو الوقت الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2913,كم تاريخ اليوم بالضبط,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2928,يو ما هو الوقت الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-2956,وش أوقات المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-2984,احذفي المنبه المجدول,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-2986,olly ألغي المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3043,عيد ضبط المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3044,في اي وقت حطيت المنبه عليه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3062,برجاء إزالة هذا المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3063,أبيك تمسح هذا المنبه للأبد,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3064,هذا المنبه خله صامت للأبد,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3089,كم الوقت بتوقيت أم القرى,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3090,كم الساعة الحين بتوقيت مكة المكرمة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3119,ما هو الوقت في السعودية الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3120,إذا كانت اثنعش ساعة قبل توقيت غرينتش فما هو الوقت في مكة الآن,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3150,متى بيرن المنبه حقي في الصبح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3152,احذف منبهي حق ستة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3153,احذف منبهات تسعة الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3155,لازم أمشي ثمنية الصباح بكرة عاير المنبه قبل بثلاثين دقيقة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3156,أحمد بيرسل لي email بكره تكفى اضبط منبه بعد ما تستلمه بربع ساعة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3157,اذا الطلبية حقي جاهزة للتسليم بكرة حط منبه بعد ساعة وشكرا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3163,وش المنبهات اللي أنا حطيتها لبكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3179,تكفى حط المنبه على سبعة ونص الصباح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3180,أبيك تحط منبه على الساعة عشرة هذا السبت,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3181,حط منبه على ثمنية الصباح الثلوث الجاي,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3186,كم الساعة في مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3201,أي شيء,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=calendar_set; split=train
+massive-ar-SA-train-3211,صحيني في هذا الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3218,حط منبه على ستة الصبح كل يوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3219,حط المنبه على ستة الصبح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3227,ما هو تاريخ بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3229,في أي يوم بيكون عيد ميلادي هاذي السنة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3241,حط منبه للظهر بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3243,حط منبه على خمسة الفجر يوم ستة يونيو ألفين وسبعطعش,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3247,ألغي كل المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3249,ألغي المنبه حق عشرة مارس ألفين وسبعطعش,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3262,كم توقيت أم القرى الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3263,ما هو توقيت الرياض الحالي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3271,ألغي كل المنبهات المعايرة اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3288,ما هو فارق التوقيت بين هنا مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3289,ما هو الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3292,كم الفرق في التوقيت بين توقيت القدس و توقيت مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3294,ما هو فرق التوقيت بين توقيت الرياض و توقيت طوكيو,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3301,كم تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3302,قد ايش أنا متأخرة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3312,عاير منبه ليا بكرة الساعة سبعة المسا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3313,محتاجة منبه على ثمانية الصبح يوم الأحد تكفى اضبط لي واحد,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3335,قولي الوقت في الطائف,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3336,تقرير الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3343,على أي وقت حطيت المنبه حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3344,في أي وقت بصحى بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3345,ما هو الوقت في ينبوع,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3346,ما هو فارق التوقيت بين موقعي و مكة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3362,هو الثالث والعشرين في عطلة الاسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3372,كم الوقت في الشرقية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3373,ما هو الوقت في ينبوع,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3374,اذا كلمت كمال في الشارقة الساعة ستة المسا كم بيكون الوقت عنده,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3375,ما الوقت سيكون محليًا في تسعة قبل الظهر بتوقيت عسير,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3384,تكفى حط المنبه على ثمنية المسا يوم الربوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3385,خلي المنبه يرن سبعة الصباح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3397,حط منبه على ثمنية الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3399,ابغى منبه لتسعة الليل,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3423,حفلة مصعب,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=calendar_query; split=train
+massive-ar-SA-train-3431,في أي وقت عيد المولد النبوي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3436,غير اعدادات المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3442,يوم اثنين وعشرين بيكون أي يوم في الأسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3445,خلني أعرف لمن تصير الساعة عشرة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3461,تكفى حط منبه على سبعة الصباح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3462,أرسل لي تنبيه يصحيني الساعة سبعة الصباح بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3465,طفي المنبه لو سمحت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3468,ما هو الوقت الآن في وقت المحيط الهادئ,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3469,الساعة تسعة هنا كم الساعة في جدة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3475,صحيني أول ما تشرق الشمس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3476,ورني اعدادات المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3498,أبغى أصحى الساعة سبعة الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3499,حطيت المنبه حقي على سبعة الصباح ولا لا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3531,هل يمكنك أن تغير المنطقة الزمنية إلى نيويورك من فضلك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3533,الرجاء غير المنطقة الزمنية إلى السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-3536,وقف كل المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3537,طفي المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3538,احذف المنبهات حقي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3567,ما هو التاريخ الحالي في السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3584,ايش الثلاث المنبهات الجاية المضبوطة عشان تشتغل,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3601,ذكرني الساعة وحدة الظهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=calendar_set; split=train
+massive-ar-SA-train-3607,كم الساعة في الطائف,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3608,ما هو الوقت في عسير,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3653,قول لي الوقت في الرياض السعودية,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3660,حط منبه على سبعة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3661,اضبط منبه للصبح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3662,حط منبه على خمسة العصر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3693,olly أبيك تحط منبه على خمسة ونص الفجر بكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3696,google خلي المنبه يرن خلال ساعة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3703,وش المنبهات اللي حطيتها لهذا الأسبوع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3706,هو تاريخ اليوم التاسع,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3719,في أي وقت أجلس في قطر الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3722,كم الساعة في النصف الشرقي من الولايات المتحدة الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3726,اعرض تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3759,صحيني سبعة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3760,أحتاج إلى مكالمة إيقاظ الساعة السادسة صباحا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3764,حط منبه على تسعة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3765,تكفى حط لي منبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3766,حط منبه لي لبكره,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3770,قائمة المنبهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3772,من فضلك اقرأي لي منبهاتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3787,ما هو عداد المؤقت في الخبر,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3788,كم الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3828,أبي أحذف منبه المسجد يوم الأحد الساعة احدعش الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3830,ما أحتاج المنبه اللي يرن كل يوم خمسة العصر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3851,من فضلك قل لي التاريخ والوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3869,أبي أعرف اذا انذار الباب الخلفي جاهز وشغال,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3873,ما هو الوقت الصحيح,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3874,كم الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3885,وش المنبهات المضبوطه حاليا,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3903,تكفى احذف المنبه اللي حطيته يوم الربوع اسمه كورة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3905,موسم الكورة خلص عشان كذا أنا ما أحتاج المنبه حق الكورة يوم الربوع المسا بعد كذا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-3922,أبي أعرف تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3933,وريني كل المنبهات الشغالة حقتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3934,ورني المنبهات اللي حطيتها,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3942,في أي يوم اليوم الوطني هاذي السنة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3943,ما هو اليوم في العشرين من هذا الشهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3948,ابيك تحط منبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3949,ممكن تحط منبه عشاني,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3955,حط المنبه على تسعة الليل,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3957,كم الوقت في الدمام,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3958,كم ساعة أمام الدمام,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-3959,غير المنبهات حقي لتوقيت مكة المكرمة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3963,أيغى أعرف اذا عندي أي منبهات اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3964,كم المنبهات اللي ضبطتها,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3965,ورني قائمة المنبهات,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-3975,صحيني الساعة ثمنية الصباح لو سمحت,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3976,حط المنبه على ثمنية الصباح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3977,نبهني ثمنية الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3985,تكفى اضبط المنبه على ستة الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3987,ممكن تحط منبه على ستة الصبح لو سمحت,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-3994,في أي يوم من الاسبوع يكون عيد الاستقلال,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4014,احذفي جميع منبهاتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-4015,احذف المنبه اللي يصحيني,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-4016,olly احذف المنبه اللي يصحيني,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-4018,olly احذف المنبهات الحالية حقتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-4019,متى يكون عيد الأم القادم,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4021,كم يوما في هذا الشهر,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4066,ممكن تقول لي كم الساعة في ينبع,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4067,هل تعلم ما هو اليوم,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4068,واسمحوا لي أن أعرف تاريخ اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4069,الساعة الحين,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4079,على أي وقت ضبطت المنبه حقي بكره الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4080,أبي أحط منبه على اثنعش الظهر بكره عشان يذكرني آخذ دواي,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-4095,برجاء ضبط المنبه حقي على الثامنة صباحا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-4096,ابيك تحط المنبه على ثمانية الصبح,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_set; split=train
+massive-ar-SA-train-4099,أكد لي انك ضبطت المنبه عشان برن الساعة ثمنية,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4107,وش المنبهات اللي ضبطتها في الجوال,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4108,عندي منبه لأربعة الفجر ولا لا,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4113,غير التوقيت من توقيت مكة المكرمة لتوقيت القدس,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-4120,وش وقت المنبه اللي حطيته انت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4122,خلني أعرف وقت المنبه,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4128,أبي أعرف اذا أنا عندي حاليا أي منبهات مضبوطة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4144,ذكرني بالتنبيهات اللي عندي اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4146,خليني أعرف أي منبهات معايرة اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_query; split=train
+massive-ar-SA-train-4148,أرني كم الساعة الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4151,ما هو يوم اليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4180,كم الساعة عشرة الصباح بتوقيت مكة,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4181,واسمحوا لي أن أعرف ما الوقت سبعة المسا في توقيت القدس,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4182,كم الساعة الحين بتوقيت مكة المكرمة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4184,ما هو الوقت الحالي في خميس مشيط,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4185,يا سيري كم الساعة الآن,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4188,يا قولي ما هو الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4192,ما هو الوقت في الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4193,ما هو الوقت الحالي في القطيف,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4194,قول لي كم الوقت في تبوك,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4199,ألغي كل المنبهات اللي حطيتها لليوم,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-4200,وقف كل المنبهات حق اليوم للأبد,date_or_time_slot_candidate,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=alarm_remove; split=train
+massive-ar-SA-train-4213,تغيير مستوى القاهرة إلى الرياض,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-4214,تغيير ساعتي إلى المنطقة الزمنية المركزية من المنطقة الحالية حقتي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-4215,أحتاج إلى المنطقة الزمنية من الرياض السعودية بدلاً من المنطقة الزمنية المركزي,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_convert; split=train
+massive-ar-SA-train-4220,ما الوقت الان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4221,ممكن اعرف كم الساعة الان,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4222,يرجى التحقق من الوقت,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4235,سلام كم الساعة,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train
+massive-ar-SA-train-4257,او سمحت قول لي كم تاريخ اليوم,action_related_original_intent,,,,,amazon_massive_ar-SA,unreviewed,,Original MASSIVE intent=datetime_query; split=train

@@ -1,0 +1,14 @@
+Warning: this test uses synthetic seed messages only; do not report as deployed accuracy.
+
+              precision    recall  f1-score   support
+
+cancellation      0.500     0.667     0.571         6
+   info_only      0.667     0.333     0.444         6
+    new_task      0.500     0.500     0.500         6
+  reschedule      0.429     0.500     0.462         6
+
+    accuracy                          0.500        24
+   macro avg      0.524     0.500     0.494        24
+weighted avg      0.524     0.500     0.494        24
+
+macro_F1=0.494

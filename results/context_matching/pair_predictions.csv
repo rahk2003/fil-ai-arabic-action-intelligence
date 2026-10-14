@@ -1,0 +1,13 @@
+pair_id,split,previous_message,followup_message,related,change_type,provenance,lexical_score,embedding_score,lexical_prediction,embedding_prediction
+1,validation,حلل كل البيانات,خلاص حلل بس جزء,1,update_task_scope,user_provided_capstone_example,0.225,0.39208629727363586,1,1
+2,validation,جهز التقرير كامل,خلاص خله مختصر,1,update_task_scope,user_provided_capstone_example,0.093333,0.3257676661014557,0,1
+3,test,حلل بيانات كل الفروع,ركز بس على فرع الرياض,1,update_task_scope,user_provided_capstone_example,0.136585,0.21665209531784058,0,0
+4,test,اجتماعنا يوم الأحد الساعة 10,خلاص خلوه الخميس الساعة 2,1,reschedule_task,user_provided_capstone_example,0.257128,0.30013465881347656,1,1
+5,test,ارسل التقرير بكرة,لا ترسله خلاص,1,cancel_task,user_provided_capstone_example,0.14,0.27869004011154175,0,0
+6,test,جهز العرض,وخله باللغة الإنجليزية,1,update_task_requirement,user_provided_capstone_example,0.090323,0.5721640586853027,0,1
+7,validation,حلل كل البيانات,وخله باللغة الإنجليزية,0,unrelated,derived_cross_pair_from_user_examples,0.132432,0.1852458268404007,0,0
+8,validation,جهز التقرير كامل,خلاص خلوه الخميس الساعة 2,0,unrelated,derived_cross_pair_from_user_examples,0.136585,0.32407844066619873,0,1
+9,test,حلل بيانات كل الفروع,لا ترسله خلاص,0,unrelated,derived_cross_pair_from_user_examples,0.084848,0.08760176599025726,0,0
+10,test,اجتماعنا يوم الأحد الساعة 10,ركز بس على فرع الرياض,0,unrelated,derived_cross_pair_from_user_examples,0.085714,0.20526647567749023,0,0
+11,test,ارسل التقرير بكرة,خلاص خله مختصر,0,unrelated,derived_cross_pair_from_user_examples,0.045161,0.3772524297237396,0,1
+12,test,جهز العرض,خلاص حلل بس جزء,0,unrelated,derived_cross_pair_from_user_examples,0.058333,0.5521154403686523,0,1

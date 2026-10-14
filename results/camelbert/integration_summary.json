@@ -1,0 +1,45 @@
+{
+  "checkpoint": "/Users/rana/Documents/Wesh_Alay_NLP_Starter/models/FIL_AI_CAMeLBERT",
+  "id2label": {
+    "0": "cancellation",
+    "1": "info_only",
+    "2": "new_task",
+    "3": "reschedule"
+  },
+  "runtime_device": "mps",
+  "evaluation_set": "/Users/rana/Documents/Wesh_Alay_NLP_Starter/results/test_predictions.csv",
+  "evaluation_rows": 24,
+  "evaluation_provenance": "synthetic",
+  "independent_test": false,
+  "leakage_warning": "This 24-row set overlaps the 500-message CAMeLBERT fine-tuning corpus; 95.8% is not an independent generalization estimate.",
+  "real_world_accuracy_claim": false,
+  "reported_external_synthetic_accuracy": 0.896,
+  "reported_external_baseline_accuracy": 0.72,
+  "reported_external_metric_note": "User-reported Colab test accuracy; not assumed to be the same split as this holdout.",
+  "metrics": [
+    {
+      "model": "baseline",
+      "model_identifier": "tfidf-logreg:intent_baseline",
+      "accuracy": 0.5,
+      "macro_precision": 0.5238095238095238,
+      "macro_recall": 0.49999999999999994,
+      "macro_f1": 0.4943528693528693,
+      "weighted_f1": 0.4943528693528693,
+      "mean_inference_latency_ms": 0.9508872050597953,
+      "rows": 24,
+      "data_provenance": "synthetic_holdout"
+    },
+    {
+      "model": "camelbert",
+      "model_identifier": "camelbert-da:FIL_AI_CAMeLBERT",
+      "accuracy": 0.9583333333333334,
+      "macro_precision": 0.9642857142857143,
+      "macro_recall": 0.9583333333333334,
+      "macro_f1": 0.958041958041958,
+      "weighted_f1": 0.958041958041958,
+      "mean_inference_latency_ms": 43.874045128177386,
+      "rows": 24,
+      "data_provenance": "synthetic_holdout"
+    }
+  ]
+}

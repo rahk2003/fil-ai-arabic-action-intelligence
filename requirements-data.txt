@@ -1,0 +1,4 @@
+datasets>=3.2,<4
+pyarrow>=17,<22
+pandas>=2,<3
+pillow>=10,<13

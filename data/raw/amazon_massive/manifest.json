@@ -1,0 +1,53 @@
+{
+  "dataset_id": "AmazonScience/massive",
+  "config": "ar-SA",
+  "source_url": "https://huggingface.co/datasets/AmazonScience/massive",
+  "license": "CC BY 4.0",
+  "counts": {
+    "train": 11514,
+    "validation": 2033,
+    "test": 2974
+  },
+  "schemas": {
+    "train": {
+      "id": "object",
+      "locale": "object",
+      "partition": "object",
+      "scenario": "object",
+      "intent": "object",
+      "utt": "object",
+      "annot_utt": "object",
+      "worker_id": "object",
+      "slot_method": "object",
+      "judgments": "object"
+    },
+    "validation": {
+      "id": "object",
+      "locale": "object",
+      "partition": "object",
+      "scenario": "object",
+      "intent": "object",
+      "utt": "object",
+      "annot_utt": "object",
+      "worker_id": "object",
+      "slot_method": "object",
+      "judgments": "object"
+    },
+    "test": {
+      "id": "object",
+      "locale": "object",
+      "partition": "object",
+      "scenario": "object",
+      "intent": "object",
+      "utt": "object",
+      "annot_utt": "object",
+      "worker_id": "object",
+      "slot_method": "object",
+      "judgments": "object"
+    }
+  },
+  "preserves_original_labels": true,
+  "download_library": "huggingface-datasets",
+  "loader_path": "Official Amazon 1.1 archive parsed with Hugging Face Datasets JSON loader",
+  "official_archive_url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz"
+}
