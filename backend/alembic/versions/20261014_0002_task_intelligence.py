@@ -14,23 +14,46 @@ depends_on = None
 
 
 def upgrade() -> None:
-    op.add_column("tasks", sa.Column("description", sa.Text()))
-    op.add_column(
-        "tasks",
-        sa.Column("workflow_status", sa.String(30), server_default="pending", nullable=False),
-    )
-    op.add_column("tasks", sa.Column("original_deadline", sa.String(100)))
+    # Batch operations recreate SQLite tables when a new column carries a
+    # foreign key, while emitting normal ALTER TABLE statements on PostgreSQL.
+    # This keeps one migration path valid for both supported databases.
+    with op.batch_alter_table("tasks") as batch_op:
+        batch_op.add_column(sa.Column("description", sa.Text()))
+        batch_op.add_column(
+            sa.Column(
+                "workflow_status",
+                sa.String(30),
+                server_default="pending",
+                nullable=False,
+            )
+        )
+        batch_op.add_column(sa.Column("original_deadline", sa.String(100)))
     op.execute("UPDATE tasks SET original_deadline = deadline WHERE original_deadline IS NULL")
 
-    op.add_column("task_events", sa.Column("summary", sa.Text()))
-    op.add_column(
-        "task_events",
-        sa.Column("related_message_id", sa.Integer(), sa.ForeignKey("messages.id", ondelete="SET NULL")),
-    )
-    op.add_column(
-        "task_events",
-        sa.Column("model_prediction_id", sa.Integer(), sa.ForeignKey("model_predictions.id", ondelete="SET NULL")),
-    )
+    with op.batch_alter_table("task_events") as batch_op:
+        batch_op.add_column(sa.Column("summary", sa.Text()))
+        batch_op.add_column(
+            sa.Column(
+                "related_message_id",
+                sa.Integer(),
+                sa.ForeignKey(
+                    "messages.id",
+                    name="fk_task_events_related_message_id_messages",
+                    ondelete="SET NULL",
+                ),
+            )
+        )
+        batch_op.add_column(
+            sa.Column(
+                "model_prediction_id",
+                sa.Integer(),
+                sa.ForeignKey(
+                    "model_predictions.id",
+                    name="fk_task_events_model_prediction_id_predictions",
+                    ondelete="SET NULL",
+                ),
+            )
+        )
     op.create_index("ix_task_events_related_message_id", "task_events", ["related_message_id"])
     op.create_index("ix_task_events_model_prediction_id", "task_events", ["model_prediction_id"])
 
@@ -73,9 +96,11 @@ def downgrade() -> None:
     op.drop_table("task_suggestions")
     op.drop_index("ix_task_events_model_prediction_id", table_name="task_events")
     op.drop_index("ix_task_events_related_message_id", table_name="task_events")
-    op.drop_column("task_events", "model_prediction_id")
-    op.drop_column("task_events", "related_message_id")
-    op.drop_column("task_events", "summary")
-    op.drop_column("tasks", "original_deadline")
-    op.drop_column("tasks", "workflow_status")
-    op.drop_column("tasks", "description")
+    with op.batch_alter_table("task_events") as batch_op:
+        batch_op.drop_column("model_prediction_id")
+        batch_op.drop_column("related_message_id")
+        batch_op.drop_column("summary")
+    with op.batch_alter_table("tasks") as batch_op:
+        batch_op.drop_column("original_deadline")
+        batch_op.drop_column("workflow_status")
+        batch_op.drop_column("description")

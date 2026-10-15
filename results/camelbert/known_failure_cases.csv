@@ -1,3 +1,3 @@
 message,expected_intent,baseline_prediction,baseline_uncalibrated_score,baseline_latency_ms,camelbert_prediction,camelbert_uncalibrated_score,camelbert_latency_ms,category,hard_coded_correction
-بكرة الدوام أون لاين,info_only,reschedule,0.2941958647875921,3.2115000067278743,reschedule,0.7564135193824768,15.741875016828999,known_info_only_false_positive,False
-تم اعتماد التقرير النهائي,info_only,new_task,0.27193184590907565,0.9487080096732825,cancellation,0.5257012248039246,19.230667006922886,known_info_only_false_positive,False
+بكرة الدوام أون لاين,info_only,reschedule,0.2941958647875921,4.202084004646167,reschedule,0.7564135193824768,15.261332999216393,known_info_only_false_positive,False
+تم اعتماد التقرير النهائي,info_only,new_task,0.27193184590907565,0.8442910038866103,cancellation,0.5257012248039246,13.05070798844099,known_info_only_false_positive,False

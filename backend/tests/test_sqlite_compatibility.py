@@ -3,8 +3,11 @@
 import sqlite3
 from pathlib import Path
 
+from alembic import command
+from alembic.config import Config
+
 from backend.app.database import Database
-from backend.app.settings import Settings
+from backend.app.settings import Settings, get_settings
 
 
 def test_legacy_sqlite_rows_survive_compatibility_upgrade(tmp_path: Path):
@@ -81,3 +84,35 @@ def test_legacy_sqlite_rows_survive_compatibility_upgrade(tmp_path: Path):
             "SELECT COUNT(*) FROM messages WHERE updated_at IS NULL"
         ).scalar_one() == 0
     database.engine.dispose()
+
+
+def test_alembic_upgrades_empty_sqlite_database_to_head(
+    tmp_path: Path, monkeypatch
+):
+    path = tmp_path / "fresh.db"
+    monkeypatch.setenv("FIL_AI_DATABASE_URL", f"sqlite:///{path}")
+    get_settings.cache_clear()
+    try:
+        config = Config("backend/alembic.ini")
+        command.upgrade(config, "head")
+    finally:
+        get_settings.cache_clear()
+
+    connection = sqlite3.connect(path)
+    try:
+        revision = connection.execute("SELECT version_num FROM alembic_version").fetchone()
+        assert revision == ("20261014_0002",)
+        task_event_columns = {
+            row[1] for row in connection.execute("PRAGMA table_info(task_events)")
+        }
+        task_event_foreign_keys = {
+            (row[3], row[2]) for row in connection.execute("PRAGMA foreign_key_list(task_events)")
+        }
+        assert {"summary", "related_message_id", "model_prediction_id"}.issubset(
+            task_event_columns
+        )
+        assert ("related_message_id", "messages") in task_event_foreign_keys
+        assert ("model_prediction_id", "model_predictions") in task_event_foreign_keys
+        assert connection.execute("PRAGMA integrity_check").fetchone() == ("ok",)
+    finally:
+        connection.close()

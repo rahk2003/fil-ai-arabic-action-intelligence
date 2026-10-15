@@ -46,12 +46,14 @@ CAMeLBERT-DA is now fine-tuned and available from the local `models/FIL_AI_CAMeL
 
 ## Full-stack quick start (SQLite)
 
-Requirements: Python 3.12 and Node.js 20 or newer. From the repository root:
+Requirements: Git LFS, Python 3.12, and Node.js 20 or newer. After cloning the repository:
 
 ```bash
+git lfs install
+git lfs pull
 python3.12 -m venv .venv312
 source .venv312/bin/activate
-python -m pip install -r backend/requirements.txt -r requirements-dev.txt
+python -m pip install -r backend/requirements.txt -r requirements-dev.txt -r requirements-embeddings.txt
 cp .env.example .env
 python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ```
@@ -87,7 +89,7 @@ Create the PostgreSQL schema:
 
 ```bash
 source .venv312/bin/activate
-alembic -c backend/alembic.ini upgrade head
+python -m alembic -c backend/alembic.ini upgrade head
 ```
 
 Optionally copy preserved SQLite rows without deleting or changing the SQLite source:
@@ -275,27 +277,15 @@ On an 8 GB Mac, use `notebooks/train_camelbert_colab.ipynb` with a GPU after rev
 
 Do not mark the scientific evaluation fully ready until a sufficiently sized, privacy-reviewed, human-labeled Saudi workplace test set is locked by conversation/paraphrase family. The next scientific step is dataset review and annotation—not another synthetic-data model claim.
 
-## GitHub submission checklist
+## GitHub submission status
 
-This workspace is not initialized as a Git repository automatically. Before submission:
+- Public repository: `https://github.com/rahk2003/fil-ai-arabic-action-intelligence`.
+- Default branch: `main`.
+- The fine-tuned `models/FIL_AI_CAMeLBERT/` checkpoint is versioned with Git LFS; run `git lfs pull` after cloning.
+- `.env`, SQLite databases, virtual environments, `node_modules`, build output, and the downloadable embedding cache remain ignored.
+- The validated classical `.joblib` checkpoints, source code, tests, documented datasets, evaluation artifacts, and capstone documentation are tracked.
 
-1. Review `git status` and confirm that `.env`, SQLite databases, raw downloadable archives, private messages, and Transformer checkpoints are excluded.
-2. Keep the small validated classical `.joblib` checkpoints. The large `models/FIL_AI_CAMeLBERT/` directory is intentionally git-ignored; document an approved checkpoint delivery method and verify its checksum rather than committing a private/oversized artifact.
-3. Run the Python tests, frontend tests/build, and baseline analysis commands shown above.
-4. Confirm that `reports/baseline_error_analysis.md`, `results/model_comparison.csv`, the dataset/model cards, demo scenarios, and presentation outline are present.
-5. Create the repository and push only after inspecting the staged file list:
-
-```bash
-git init
-git add .
-git status --short
-git commit -m "Build FI'L AI full-stack capstone platform"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
-```
-
-After cloning into a clean directory, repeat the SQLite quick start and open both `/api/health` and the React dashboard. Never commit `.env`, user messages, database files, tokens, passwords, or unreviewed private data.
+Before the final academy handoff, run the Python tests, frontend tests/build, and inference checks shown above. Then open both `/api/health` and the React dashboard from a clean clone. Never commit tokens, passwords, runtime databases, or private user messages.
 
 ## Privacy and scientific limits
 

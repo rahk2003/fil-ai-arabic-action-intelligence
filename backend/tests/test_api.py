@@ -353,7 +353,7 @@ def test_model_comparison_evidence_is_saved_and_leakage_labeled(client: TestClie
     assert payload["metrics"]["reported_colab_125"]["baseline_accuracy"] == 0.72
     assert payload["metrics"]["reported_colab_125"]["camelbert_accuracy"] == 0.896
     assert payload["methodology"]["independent_test"] is False
-    assert "overlaps" in payload["methodology"]["leakage_warning"]
+    assert "تتداخل" in payload["methodology"]["leakage_warning"]
 
 
 def test_csv_import_preview_duplicate_validation_and_commit(client: TestClient):

@@ -109,7 +109,7 @@
 
 ## 10. الاختبارات والتحقق
 
-- Python/FastAPI: **38 passed، 1 xfailed**. الـxfail هو فشل Baseline المعروف في deadline-vs-reschedule، ومحتفظ به كتتبع صريح.
+- Python/FastAPI: **39 passed، 1 xfailed**. تشمل النتيجة اختبار إنشاء SQLite من قاعدة فارغة والترقية إلى Alembic head. الـxfail هو فشل Baseline المعروف في deadline-vs-reschedule، ومحتفظ به كتتبع صريح.
 - React/Vitest: **5 ملفات، 10 اختبارات ناجحة**.
 - Production build: نجح؛ 2,191 module transformed.
 - CAMeLBERT integration: نجح على MPS؛ 24 صفًا، Accuracy 0.9583، Macro-F1 0.9580، مع تحذير التداخل.
@@ -173,6 +173,6 @@ cd /Users/rana/Documents/Wesh_Alay_NLP_Starter
 
 ## 14. جاهزية GitHub
 
-الكود والوثائق وأوامر إعادة التشغيل جاهزة للتجهيز، لكن المجلد الحالي **ليس Git repository**. قبل الرفع يجب مراجعة `.gitignore` وعدم رفع `.env` أو SQLite أو الرسائل الخاصة أو checkpoint كبير دون سياسة تسليم/checksum. لم يُرفع شيء تلقائيًا.
+المشروع منشور في المستودع العام `https://github.com/rahk2003/fil-ai-arabic-action-intelligence` على الفرع `main`. حُفظ checkpoint الخاص بـCAMeLBERT باستخدام Git LFS، بينما بقيت `.env` وقاعدة SQLite والبيئات الافتراضية و`node_modules` ومخبأ embeddings خارج Git. يتطلب الاستنساخ الكامل تشغيل `git lfs install` ثم `git lfs pull` قبل بدء التطبيق.
 
 ملاحظة حفظ البيانات: لم تُحذف السجلات القديمة. لذلك قد تبقى اقتراحات معلقة أُنشئت بالإصدار السابق الضعيف؛ الإصدار الجديد يمنع تكرارها، ويمكن مراجعتها ورفضها من الواجهة بدل حذفها من قاعدة البيانات.

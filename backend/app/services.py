@@ -916,19 +916,6 @@ def _csv_bool(value: Any) -> bool:
     return value is True or str(value).strip().lower() == "true"
 
 
-def model_comparison_evidence_payload(limit: int = 10) -> dict[str, Any]:
-    """Return only saved, reproducible comparisons; never synthesize model wins."""
-    predictions_path = PROJECT_ROOT / "results/camelbert/same_holdout_predictions.csv"
-    metrics_path = PROJECT_ROOT / "results/camelbert/same_holdout_metrics.csv"
-    rows = read_csv_records(predictions_path)
-    metrics_rows = read_csv_records(metrics_path)
-    labels = ["new_task", "reschedule", "cancellation", "info_only"]
-    confusion = {
-        model: {truth: {prediction: 0 for prediction in labels} for truth in labels}
-        for model in ("baseline", "camelbert")
-    }
-
-
 def _failure_category(message: str, truth: str | None = None) -> str:
     normalized = str(message)
     if re.search(r"(?:ما في داعي|لا |لن |محد|لاحد)", normalized): return "negation"
@@ -1058,9 +1045,8 @@ def error_analysis_payload() -> dict[str, Any]:
     }
 
 
-# Kept as a complete definition after the error-analysis builder so the two
-# artifact readers remain independent and neither can truncate the other.
 def model_comparison_evidence_payload(limit: int = 10) -> dict[str, Any]:
+    """Return only saved, reproducible comparisons; never synthesize model wins."""
     rows = read_csv_records(PROJECT_ROOT / "results/camelbert/same_holdout_predictions.csv")
     metrics_rows = read_csv_records(PROJECT_ROOT / "results/camelbert/same_holdout_metrics.csv")
     labels = ["new_task", "reschedule", "cancellation", "info_only"]
@@ -1089,7 +1075,7 @@ def model_comparison_evidence_payload(limit: int = 10) -> dict[str, Any]:
         "methodology": {
             "saved_prediction_rows": len(rows), "data_provenance": "synthetic", "reference_labels": "saved synthetic evaluation labels",
             "independent_test": False,
-            "leakage_warning": "The 24-row repository holdout overlaps the 500-message CAMeLBERT fine-tuning corpus and is not an independent estimate. It may demonstrate pipeline behavior but must not be presented as unbiased generalization accuracy.",
+            "leakage_warning": "مجموعة المستودع ذات 24 رسالة تتداخل مع بيانات CAMeLBERT الاصطناعية ذات 500 رسالة؛ لذلك هي تجربة تشخيصية وليست تقديرًا مستقلًا للتعميم، ولا يجوز عرض نتيجتها كدليل غير متحيز على الدقة الواقعية.",
             "selection_rule": "baseline incorrect AND CAMeLBERT correct in saved predictions",
             "available_genuine_improvements": len(improvements), "errors": {"baseline": len(errors["baseline"]), "camelbert": len(errors["camelbert"])},
         },
