@@ -102,8 +102,8 @@
 سياقات التقييم منفصلة:
 
 1. Baseline الأصلي: Accuracy 50.0%، Macro-F1 0.494 على 24 اصطناعية.
-2. Colab على نفس 125 الاصطناعية: classical baseline 72.0% / ~0.719، CAMeLBERT 89.6% / ~0.895.
-3. تشخيص المستودع 24: CAMeLBERT 95.8% / 0.958، لكنه متداخل مع بيانات الضبط وغير مستقل.
+2. **المقارنة الأساسية المبلّغ عنها:** Colab على نفس 125 الاصطناعية: classical baseline 72.0% / ~0.719، CAMeLBERT 89.6% / ~0.895؛ التحسن +17.6 نقطة مئوية في الدقة. لا توجد تنبؤات صفّية لإعادة إنتاجها محليًا، ولا تمثل دقة واقعية.
+3. **تحذير تسرب بيانات:** تشخيص المستودع 24 أعطى CAMeLBERT 95.8% / 0.958، لكنه متداخل مع بيانات الضبط وغير مستقل، لذلك ليس النتيجة الأساسية.
 
 ملف تنبؤات Colab ومصفوفة التباسه غير محفوظين؛ تعرض الواجهة Precision/Recall/Confusion Matrix كـ«غير محفوظ» بدل اختلاقها.
 
@@ -112,7 +112,7 @@
 - Python/FastAPI: **39 passed، 1 xfailed**. تشمل النتيجة اختبار إنشاء SQLite من قاعدة فارغة والترقية إلى Alembic head. الـxfail هو فشل Baseline المعروف في deadline-vs-reschedule، ومحتفظ به كتتبع صريح.
 - React/Vitest: **5 ملفات، 10 اختبارات ناجحة**.
 - Production build: نجح؛ 2,191 module transformed.
-- CAMeLBERT integration: نجح على MPS؛ 24 صفًا، Accuracy 0.9583، Macro-F1 0.9580، مع تحذير التداخل.
+- CAMeLBERT integration diagnostic: نجح على MPS؛ 24 صفًا، Accuracy 0.9583، Macro-F1 0.9580، مع تحذير صريح بأنه اختبار ملوث للتكامل فقط.
 - Semantic API: أبلغ `method=embeddings`, `device=mps`, `dimension=384`.
 - قاعدة البيانات: `PRAGMA integrity_check = ok`، ولا أخطاء foreign-key، ولا تكرار title+deadline في المهام.
 - المتصفح الفعلي: تحقق من التقويم، الاستيراد، المحادثة، المقارنة، سجل الـ500، فصل التقييم، وصفحة أخطاء فيها 30 سجلًا ومرشحان.

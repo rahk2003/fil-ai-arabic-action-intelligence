@@ -85,7 +85,7 @@ export interface ComparisonExample {
 }
 export interface ModelComparisonEvidence {
   examples: ComparisonExample[];
-  metrics: Record<string, Record<string, string | number>>;
+  metrics: Record<string, Record<string, unknown>>;
   confusion_matrices: Record<string, Record<string, Record<string, number>>>;
   methodology: {
     saved_prediction_rows: number; data_provenance: string; reference_labels: string;
@@ -102,7 +102,7 @@ export interface ModelStatus {
   device: string | null; labels: Record<string, string> | string[] | null; warning: string | null;
 }
 export interface Analytics {
-  model: { active: string; warning: string | null; transformer_trained: boolean; available: Record<ModelChoice, ModelStatus>; camelbert_reported_accuracy: number; camelbert_metric_provenance: string; reported_colab_125: { baseline_accuracy: number; baseline_macro_f1: number; camelbert_accuracy: number; camelbert_macro_f1: number } };
+  model: { active: string; warning: string | null; transformer_trained: boolean; available: Record<ModelChoice, ModelStatus>; camelbert_reported_accuracy: number | null; camelbert_metric_provenance: string; reported_colab_125: { available: boolean; rows?: number; experiment_rows?: number; split?: { train: number; validation: number; test: number }; provenance?: string; source?: string; source_artifact: string; baseline_accuracy?: number; baseline_macro_f1?: number; camelbert_accuracy?: number; camelbert_macro_f1?: number; accuracy_improvement_percentage_points?: number; same_test_split_for_both_models?: boolean; verification_status: string; row_level_predictions_available?: boolean; split_membership_available?: boolean; paraphrase_family_independence_verified?: boolean; real_world_accuracy_claim?: boolean; note?: string } };
   baseline: { accuracy?: number; macro_precision?: number; macro_recall?: number; macro_f1?: number; holdout_rows?: number; misclassifications?: number };
   class_metrics: Array<{ intent: Intent; precision: number; recall: number; f1_score: number; support: number }>;
   confusion_matrix: Array<Record<string, string | number>>;

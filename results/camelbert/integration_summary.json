@@ -13,9 +13,19 @@
   "independent_test": false,
   "leakage_warning": "This 24-row set overlaps the 500-message CAMeLBERT fine-tuning corpus; 95.8% is not an independent generalization estimate.",
   "real_world_accuracy_claim": false,
-  "reported_external_synthetic_accuracy": 0.896,
-  "reported_external_baseline_accuracy": 0.72,
-  "reported_external_metric_note": "User-reported Colab test accuracy; not assumed to be the same split as this holdout.",
+  "evaluation_role": "contaminated_24_row_integration_diagnostic",
+  "primary_comparison_artifact": "results/camelbert/colab_reported_metrics.json",
+  "primary_reported_comparison": {
+    "evaluation_rows": 125,
+    "data_provenance": "synthetic",
+    "baseline_accuracy": 0.72,
+    "baseline_macro_f1_approx": 0.719,
+    "camelbert_accuracy": 0.896,
+    "camelbert_macro_f1_approx": 0.895,
+    "accuracy_improvement_percentage_points": 17.6,
+    "verification_status": "reported_experiment_results_not_freshly_reproduced",
+    "paraphrase_family_independence_verified": false
+  },
   "metrics": [
     {
       "model": "baseline",

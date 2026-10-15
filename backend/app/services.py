@@ -889,6 +889,57 @@ def read_json(path: Path, default: Any) -> Any:
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else default
 
 
+def reported_colab_metrics_payload() -> dict[str, Any]:
+    """Load the reported Colab comparison without turning it into a reproduced claim."""
+    path = PROJECT_ROOT / "results/camelbert/colab_reported_metrics.json"
+    raw = read_json(path, {})
+    try:
+        baseline_accuracy = float(raw["baseline"]["accuracy"])
+        baseline_macro_f1 = float(raw["baseline"]["macro_f1_approx"])
+        camelbert_accuracy = float(raw["camelbert"]["accuracy"])
+        camelbert_macro_f1 = float(raw["camelbert"]["macro_f1_approx"])
+        rows = int(raw["evaluation_rows"])
+    except (KeyError, TypeError, ValueError):
+        return {
+            "available": False,
+            "source_artifact": str(path.relative_to(PROJECT_ROOT)),
+            "verification_status": "artifact_missing_or_invalid",
+        }
+    return {
+        "available": True,
+        "rows": rows,
+        "experiment_rows": raw.get("experiment_rows"),
+        "split": raw.get("split"),
+        "provenance": raw.get("data_provenance", "synthetic"),
+        "source": raw.get("source", "reported experiment"),
+        "source_artifact": str(path.relative_to(PROJECT_ROOT)),
+        "baseline_accuracy": baseline_accuracy,
+        "baseline_macro_f1": baseline_macro_f1,
+        "camelbert_accuracy": camelbert_accuracy,
+        "camelbert_macro_f1": camelbert_macro_f1,
+        "accuracy_improvement_percentage_points": round(
+            (camelbert_accuracy - baseline_accuracy) * 100, 1
+        ),
+        "same_test_split_for_both_models": bool(
+            raw.get("same_test_split_for_both_models", True)
+        ),
+        "verification_status": raw.get(
+            "verification_status", "reported_experiment_results_not_freshly_reproduced"
+        ),
+        "row_level_predictions_available": bool(
+            raw.get("row_level_predictions_available", False)
+        ),
+        "split_membership_available": bool(
+            raw.get("split_membership_available", False)
+        ),
+        "paraphrase_family_independence_verified": bool(
+            raw.get("paraphrase_family_independence_verified", False)
+        ),
+        "real_world_accuracy_claim": bool(raw.get("real_world_accuracy_claim", False)),
+        "note": raw.get("note"),
+    }
+
+
 def read_csv_records(path: Path) -> list[dict[str, Any]]:
     if not path.is_file():
         return []
@@ -931,6 +982,12 @@ def error_analysis_payload() -> dict[str, Any]:
     baseline_rows = read_csv_records(PROJECT_ROOT / "results/baseline/misclassified_examples.csv")
     overlap_rows = read_csv_records(PROJECT_ROOT / "results/camelbert/same_holdout_predictions.csv")
     challenge_rows = read_csv_records(PROJECT_ROOT / "results/camelbert/saudi_challenge_predictions.csv")
+    reported_colab = reported_colab_metrics_payload()
+    reported_colab_errors = (
+        round(reported_colab["rows"] * (1 - reported_colab["camelbert_accuracy"]))
+        if reported_colab.get("available")
+        else None
+    )
     failures: list[dict[str, Any]] = []
     for row in baseline_rows:
         failures.append({
@@ -966,7 +1023,7 @@ def error_analysis_payload() -> dict[str, Any]:
         "failures": failures,
         "sections": {
             "original_baseline": {"saved_errors": len(baseline_rows), "independent_for_baseline": True, "note": "اختبار اصطناعي محفوظ من 24 رسالة؛ صالح لتحليل النموذج الأساسي فقط."},
-            "colab_125": {"reported_errors": 13, "prediction_rows_available": False, "note": "حُفظت المقاييس الإجمالية فقط؛ لا يمكن عرض رسائل الخطأ أو مصفوفة الالتباس دون ملف تنبؤات Colab."},
+            "colab_125": {"reported_errors": reported_colab_errors, "derived_from_aggregate_accuracy": True, "prediction_rows_available": False, "note": "عدد الأخطاء مشتق حسابيًا من الدقة الإجمالية المبلّغ عنها؛ لم تُحفظ تنبؤات الصفوف، لذلك لا يمكن عرض رسائل الخطأ أو مصفوفة الالتباس."},
             "overlapping_24": {"rows": len(overlap_rows), "independent_comparison": False, "note": "متداخل مع بيانات ضبط CAMeLBERT؛ تشخيص تكامل فقط."},
             "saudi_challenge": {"rows": len(challenge_rows), "human_verified": False, "note": "أمثلة تحدٍ اصطناعية منسقة، وليست مجموعة اختبار واقعية مستقلة."},
         },
@@ -1013,14 +1070,7 @@ def error_analysis_payload() -> dict[str, Any]:
         }
         for row in metrics_rows
     }
-    metrics["reported_colab_125"] = {
-        "rows": 125,
-        "provenance": "user_reported_synthetic_colab_evaluation",
-        "baseline_accuracy": 0.72,
-        "baseline_macro_f1": 0.719,
-        "camelbert_accuracy": 0.896,
-        "camelbert_macro_f1": 0.895,
-    }
+    metrics["reported_colab_125"] = reported_colab_metrics_payload()
     return {
         "examples": improvements[:limit],
         "metrics": metrics,
@@ -1069,7 +1119,7 @@ def model_comparison_evidence_payload(limit: int = 10) -> dict[str, Any]:
         if not example["camelbert_correct"]: errors["camelbert"].append(example)
         if not example["baseline_correct"] and example["camelbert_correct"]: improvements.append(example)
     metrics = {row["model"]: {"model_identifier": row["model_identifier"], "accuracy": row["accuracy"], "macro_f1": row["macro_f1"], "rows": row["rows"], "mean_inference_latency_ms": row["mean_inference_latency_ms"], "provenance": row["data_provenance"]} for row in metrics_rows}
-    metrics["reported_colab_125"] = {"rows": 125, "provenance": "user_reported_synthetic_colab_evaluation", "baseline_accuracy": 0.72, "baseline_macro_f1": 0.719, "camelbert_accuracy": 0.896, "camelbert_macro_f1": 0.895}
+    metrics["reported_colab_125"] = reported_colab_metrics_payload()
     return {
         "examples": improvements[:limit], "metrics": metrics, "confusion_matrices": confusion,
         "methodology": {
@@ -1143,22 +1193,18 @@ def analytics_payload(model_statuses: dict[str, dict[str, Any]], session: Sessio
             "license": "يحدد عند الجمع", "limitations": "العدد الحالي صفر.", "file_available": False,
         },
     ]
+    reported_colab = reported_colab_metrics_payload()
     return {
         "model": {
             "active": model_statuses["baseline"]["identifier"],
             "warning": model_statuses["baseline"]["warning"],
             "transformer_trained": model_statuses["camelbert"]["available"],
             "available": model_statuses,
-            "camelbert_reported_accuracy": 0.896,
+            "camelbert_reported_accuracy": reported_colab.get("camelbert_accuracy"),
             "camelbert_metric_provenance": (
                 "User-reported 125-example synthetic Colab evaluation; it is not real-world accuracy."
             ),
-            "reported_colab_125": {
-                "baseline_accuracy": 0.72,
-                "baseline_macro_f1": 0.719,
-                "camelbert_accuracy": 0.896,
-                "camelbert_macro_f1": 0.895,
-            },
+            "reported_colab_125": reported_colab,
         },
         "baseline": baseline,
         "class_metrics": class_metrics,
@@ -1174,7 +1220,14 @@ def analytics_payload(model_statuses: dict[str, dict[str, Any]], session: Sessio
         "limitations": [
             "The preserved TF-IDF baseline was trained on 96 synthetic messages.",
             "Synthetic holdout metrics cannot establish real-world accuracy.",
-            "CAMeLBERT's reported 89.6% test accuracy is from synthetic data only.",
+            (
+                "The reported Colab comparison is synthetic only: baseline "
+                f"{reported_colab['baseline_accuracy'] * 100:.1f}% versus CAMeLBERT "
+                f"{reported_colab['camelbert_accuracy'] * 100:.1f}% "
+                f"(+{reported_colab['accuracy_improvement_percentage_points']:.1f} percentage points)."
+                if reported_colab.get("available")
+                else "The reported Colab comparison artifact is missing or invalid; no replacement metric is shown."
+            ),
             "The separate 24-row 95.8% result overlaps the 500-message fine-tuning corpus and is not an independent comparison.",
             "Extraction and contextual matching lack a reviewed quantitative test set.",
         ],

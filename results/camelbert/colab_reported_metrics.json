@@ -1,5 +1,11 @@
 {
   "evaluation_rows": 125,
+  "experiment_rows": 500,
+  "split": {
+    "train": 300,
+    "validation": 75,
+    "test": 125
+  },
   "data_provenance": "synthetic",
   "source": "user-reported Google Colab evaluation",
   "baseline": {
@@ -11,6 +17,13 @@
     "macro_f1_approx": 0.895
   },
   "independent_from_training": "not established",
+  "same_test_split_for_both_models": true,
+  "accuracy_improvement_percentage_points": 17.6,
+  "verification_status": "reported_experiment_results_not_freshly_reproduced",
+  "row_level_predictions_available": false,
+  "split_membership_available": false,
+  "paraphrase_family_independence_verified": false,
+  "primary_project_comparison": true,
   "real_world_accuracy_claim": false,
   "note": "The separate 24-row 95.8% result overlaps the 500-message CAMeLBERT fine-tuning corpus and must not be presented as an independent comparison."
 }

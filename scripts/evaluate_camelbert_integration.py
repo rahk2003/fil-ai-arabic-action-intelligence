@@ -106,6 +106,8 @@ def evaluate(input_path: Path, output_dir: Path, device: str) -> dict[str, objec
     detailed.to_csv(output_dir / "same_holdout_predictions.csv", index=False)
     pd.DataFrame(metrics).to_csv(output_dir / "same_holdout_metrics.csv", index=False)
     pd.DataFrame(known_rows).to_csv(output_dir / "known_failure_cases.csv", index=False)
+    reported_path = output_dir / "colab_reported_metrics.json"
+    reported_colab = json.loads(reported_path.read_text(encoding="utf-8")) if reported_path.is_file() else None
     summary = {
         "checkpoint": str(ROOT / "models/FIL_AI_CAMeLBERT"),
         "id2label": registry.get("camelbert").id2label,
@@ -119,11 +121,9 @@ def evaluate(input_path: Path, output_dir: Path, device: str) -> dict[str, objec
             "95.8% is not an independent generalization estimate."
         ),
         "real_world_accuracy_claim": False,
-        "reported_external_synthetic_accuracy": 0.896,
-        "reported_external_baseline_accuracy": 0.72,
-        "reported_external_metric_note": (
-            "User-reported Colab test accuracy; not assumed to be the same split as this holdout."
-        ),
+        "evaluation_role": "contaminated_24_row_integration_diagnostic",
+        "primary_comparison_artifact": str(reported_path.relative_to(ROOT)),
+        "primary_reported_comparison": reported_colab,
         "metrics": metrics,
     }
     (output_dir / "integration_summary.json").write_text(

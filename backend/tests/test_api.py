@@ -130,6 +130,15 @@ def test_analytics_uses_saved_artifacts(client: TestClient):
     }
     assert payload["model"]["transformer_trained"] is True
     assert payload["model"]["camelbert_reported_accuracy"] == 0.896
+    primary = payload["model"]["reported_colab_125"]
+    assert primary["available"] is True
+    assert primary["baseline_accuracy"] == 0.72
+    assert primary["camelbert_accuracy"] == 0.896
+    assert primary["accuracy_improvement_percentage_points"] == 17.6
+    assert primary["provenance"] == "synthetic"
+    assert primary["verification_status"] == "reported_experiment_results_not_freshly_reproduced"
+    assert primary["row_level_predictions_available"] is False
+    assert primary["paraphrase_family_independence_verified"] is False
 
 
 def test_camelbert_and_compare_use_the_requested_real_models(client: TestClient):
@@ -352,6 +361,9 @@ def test_model_comparison_evidence_is_saved_and_leakage_labeled(client: TestClie
     assert all(not row["baseline_correct"] and row["camelbert_correct"] for row in payload["examples"])
     assert payload["metrics"]["reported_colab_125"]["baseline_accuracy"] == 0.72
     assert payload["metrics"]["reported_colab_125"]["camelbert_accuracy"] == 0.896
+    assert payload["metrics"]["reported_colab_125"]["accuracy_improvement_percentage_points"] == 17.6
+    assert payload["metrics"]["reported_colab_125"]["source_artifact"] == "results/camelbert/colab_reported_metrics.json"
+    assert payload["metrics"]["reported_colab_125"]["row_level_predictions_available"] is False
     assert payload["methodology"]["independent_test"] is False
     assert "تتداخل" in payload["methodology"]["leakage_warning"]
 

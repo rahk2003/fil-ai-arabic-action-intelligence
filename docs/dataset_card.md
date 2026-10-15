@@ -15,6 +15,17 @@ See `data/annotation/labeling_guidelines.md`. Primary labels are `new_task`, `re
 
 The historical baseline uses 72 synthetic training and 24 stratified synthetic holdout rows. There are no exact or normalized duplicates in the seed set, but shared author/template style remains a leakage/generalization risk. The repository's 24-row CAMeLBERT diagnostic overlaps the fine-tuning corpus and is explicitly contaminated. MASSIVE's official splits are preserved. Future in-domain data must be grouped by conversation/source/paraphrase family before splitting.
 
+## 500-message leakage audit status
+
+The repository was searched for the fine-tuning rows, split manifests, row identifiers, hashes, and paraphrase-family identifiers. Only the aggregate Colab metrics and a notebook that performs a stratified row-level split are present. Consequently:
+
+- reported split sizes (300 train / 75 validation / 125 test) are documented;
+- exact duplicate counts across those splits cannot be recalculated;
+- near-duplicate or paraphrase-family leakage cannot be measured;
+- independence of the 125-message test split at the source/conversation/paraphrase-family level is **not verified**.
+
+This is an evidence gap, not proof that leakage occurred. A future reproducible experiment must preserve de-identified row IDs, split membership, family/group IDs, and row-level predictions.
+
 ## Privacy and limitations
 
 Never ingest private conversations without consent and de-identification. The synthetic data is clean and narrow. MASSIVE is task-oriented assistant language and cannot substitute for natural task-management messages.

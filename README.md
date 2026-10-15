@@ -20,7 +20,7 @@ Project repository: [https://github.com/rahk2003/fil-ai-arabic-action-intelligen
 
 FI'L AI is a local Arabic NLP capstone platform for classifying messages and turning them into reviewable structured actions. It combines the preserved Python NLP pipeline with a React/TypeScript Arabic-first interface, a FastAPI REST service, and either SQLite or PostgreSQL. It supports Modern Standard Arabic and common Saudi expressions, extracts bounded date/time patterns, proposes links to earlier tasks, and stores only user-confirmed changes. It uses no paid API.
 
-> Current accuracy is **not a real-world estimate**. The preserved TF-IDF baseline was trained on 96 synthetic examples and scored 50% accuracy / 0.494 macro-F1 on its 24-example synthetic holdout. The local fine-tuned CAMeLBERT scored 95.8% / 0.958 on those same 24 rows, but those rows overlap its fine-tuning corpus, so that result is a contaminated integration diagnostic—not an independent model comparison. The separately reported Colab comparison used the same 125-message synthetic test split for both models (72.0% classical baseline vs 89.6% CAMeLBERT); paraphrase-family independence is not verifiable from the files currently present.
+> **Primary model comparison (reported synthetic experiment):** on the same 125-message Colab test split, the classical baseline recorded **72.0% accuracy / ≈0.719 Macro-F1**, while fine-tuned CAMeLBERT recorded **89.6% accuracy / ≈0.895 Macro-F1**—an improvement of **+17.6 percentage points in accuracy**. These are synthetic-data results, not real-world accuracy. The repository contains the aggregate result artifact but not the row-level predictions or split membership, so the values are reported experiment results rather than a freshly reproduced evaluation. A separate 24-row repository run produced 95.8%, but those rows overlap the fine-tuning corpus; that number is retained only as a contaminated integration diagnostic with a data-leakage warning.
 
 ## What works now
 
@@ -206,7 +206,20 @@ The API validates this exact mapping before loading weights:
 
 The checkpoint loads only after an explicit CAMeLBERT request and is cached for the FastAPI process. `auto` selects Apple MPS when available and otherwise CPU; set `FIL_AI_TRANSFORMER_DEVICE=cpu|mps` to make the choice explicit. A failed CAMeLBERT request returns HTTP 503 and is never replaced silently with the baseline.
 
-Reproduce the comparison on the same preserved synthetic holdout:
+### Primary reported comparison — shared 125-message synthetic split
+
+The source of truth is [`results/camelbert/colab_reported_metrics.json`](results/camelbert/colab_reported_metrics.json).
+
+| Model | Accuracy | Macro-F1 | Evaluation status |
+|---|---:|---:|---|
+| Classical baseline | **72.0%** | ≈0.719 | Reported Colab result |
+| Fine-tuned CAMeLBERT-DA | **89.6%** | ≈0.895 | Reported Colab result |
+
+Accuracy improvement on the same reported synthetic test split: **+17.6 percentage points**. The experiment used a reported 300/75/125 train/validation/test split from 500 synthetic messages. The repository does not contain the exact 500-row file, split membership, row-level test predictions, or Colab confusion matrix. Therefore these values cannot be freshly reproduced or independently audited from the repository alone. Exact-duplicate and paraphrase-family leakage in that 500-message experiment are not verifiable; a random row-level split could allow closely related paraphrases to cross splits.
+
+### Data Leakage warning — 24-row integration diagnostic only
+
+Reproduce the local integration diagnostic on the preserved repository holdout:
 
 ```bash
 source .venv312/bin/activate
@@ -222,9 +235,9 @@ Outputs are written to `results/camelbert/`. This local run observed:
 
 \*Observed on the current CPU runtime over 24 synthetic messages; latency varies by device and excludes one-time lazy model loading.
 
-The only CAMeLBERT error on this 24-row holdout was `ما يحتاج ترفعين النموذج بعد القرار الجديد.` (`cancellation` → `new_task`). The two user-reported failures are also reproduced and recorded without hard-coded correction in `results/camelbert/known_failure_cases.csv`.
+**Do not use 95.8% as the primary model accuracy.** The 24 rows overlap CAMeLBERT fine-tuning data, so this is a contaminated pipeline/integration diagnostic, not an independent performance comparison or a real-world estimate. The raw artifacts remain unchanged and tied to their actual dataset.
 
-The separate Colab experiment is retained as reported evidence on one shared 125-message synthetic split: classical baseline 72.0% accuracy / approximately 0.719 macro-F1; CAMeLBERT 89.6% / approximately 0.895. Per-row predictions, precision/recall, and confusion matrices were not saved in the repository, so the application marks them unavailable rather than inventing them.
+The only CAMeLBERT error on this diagnostic was `ما يحتاج ترفعين النموذج بعد القرار الجديد.` (`cancellation` → `new_task`). The two user-reported failures are also reproduced and recorded without hard-coded correction in `results/camelbert/known_failure_cases.csv`.
 
 ## Semantic context matching
 

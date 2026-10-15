@@ -4,6 +4,8 @@
 
 This analysis covers the existing TF-IDF + Logistic Regression baseline only. It does **not** train or modify a model. The full dataset contains 96 manually written **synthetic** Arabic messages, and the evaluated holdout contains only 24 synthetic messages. These results are useful for debugging the pipeline, but **cannot establish real-world accuracy, robustness, or deployment readiness**.
 
+This report must not be used to infer CAMeLBERT accuracy. The project's primary model comparison is the separately reported 125-message synthetic Colab experiment (72.0% baseline versus 89.6% CAMeLBERT, +17.6 percentage points); row-level Colab errors are unavailable. The 95.8% CAMeLBERT result on the repository's overlapping 24 rows is a contaminated integration diagnostic only.
+
 ## Executive summary
 
 - Accuracy: **0.500 (12/24, or 50.0%)**

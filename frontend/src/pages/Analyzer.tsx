@@ -101,6 +101,10 @@ export default function Analyzer() {
   const [expectedLabel, setExpectedLabel] = useState<Intent | null>(null);
   const [evidence, setEvidence] = useState<ModelComparisonEvidence | null>(null);
   useEffect(() => { api.modelComparisonEvidence(10).then(setEvidence).catch(() => setEvidence(null)); }, []);
+  const reportedComparison = evidence?.metrics.reported_colab_125;
+  const reportedBaseline = typeof reportedComparison?.baseline_accuracy === "number" ? reportedComparison.baseline_accuracy : null;
+  const reportedCamelbert = typeof reportedComparison?.camelbert_accuracy === "number" ? reportedComparison.camelbert_accuracy : null;
+  const reportedImprovement = typeof reportedComparison?.accuracy_improvement_percentage_points === "number" ? reportedComparison.accuracy_improvement_percentage_points : null;
 
   function acceptResults(next: AnalyzeResponse[]) {
     setResults(next);
@@ -197,7 +201,9 @@ export default function Analyzer() {
             </button>
           </div>
           <p className="mt-4 text-xs leading-5 text-slate-500">
-            نتيجة CAMeLBERT المعلنة 89.6% مبنية على بيانات اصطناعية فقط، وليست تقديرًا للدقة في الاستخدام الواقعي.
+            {reportedBaseline !== null && reportedCamelbert !== null
+              ? `المقارنة الأساسية المبلّغ عنها على 125 رسالة اصطناعية: Baseline ${(reportedBaseline * 100).toFixed(1)}%، وCAMeLBERT ${(reportedCamelbert * 100).toFixed(1)}%${reportedImprovement !== null ? `، بتحسن +${reportedImprovement.toFixed(1)} نقطة مئوية` : ""}. ليست تقديرًا للدقة في الاستخدام الواقعي.`
+              : "تعذر تحميل ملخص المقارنة الأساسي؛ لن تُعرض أرقام بديلة غير موثقة."}
           </p>
         </form>
 

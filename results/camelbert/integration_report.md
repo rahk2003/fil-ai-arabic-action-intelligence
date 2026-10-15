@@ -12,7 +12,13 @@ Generated from actual local inference on 2026-10-14. No model was retrained by t
 - Loading behavior: lazy first use, then one cached model per FastAPI process
 - Failure behavior: explicit CAMeLBERT requests fail with HTTP 503; no silent baseline substitution
 
-## Same-holdout comparison
+## Primary reported comparison — shared 125-message synthetic split
+
+The saved aggregate artifact reports a classical baseline accuracy of 72.0% / approximately 0.719 Macro-F1 and CAMeLBERT accuracy of 89.6% / approximately 0.895 Macro-F1. This is a +17.6 percentage-point accuracy improvement on the same reported synthetic split.
+
+The exact 500 rows, split membership, row-level predictions, and confusion matrix are not saved in the repository. These numbers are reported experiment results, not freshly reproduced metrics, and do not establish real-world accuracy. Exact-duplicate and paraphrase-family leakage cannot be independently audited.
+
+## Data Leakage warning — same-holdout integration diagnostic
 
 Both models were run on the exact 24 messages and labels in `results/test_predictions.csv`.
 
@@ -23,7 +29,7 @@ Both models were run on the exact 24 messages and labels in `results/test_predic
 
 Latency is an observed CPU measurement and excludes one-time lazy checkpoint loading. It is not a benchmark for every Mac.
 
-The holdout is synthetic. These values compare the implementations under one controlled repository test but cannot establish Saudi workplace or real-world accuracy. The separately reported 89.6% Colab test accuracy is also synthetic and is not assumed to use this exact 24-row split.
+The holdout is synthetic and overlaps the CAMeLBERT fine-tuning corpus. The 95.8% result is retained only as a contaminated pipeline/integration diagnostic; it is not the primary model accuracy and cannot establish Saudi workplace or real-world performance.
 
 ## Observed failures
 
