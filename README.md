@@ -4,6 +4,8 @@
 
 SDAIA Academy: [https://github.com/SDAIAAcademy](https://github.com/SDAIAAcademy)
 
+Project repository: [https://github.com/rahk2003/fil-ai-arabic-action-intelligence](https://github.com/rahk2003/fil-ai-arabic-action-intelligence)
+
 ## ملخص سريع
 
 فِعل منصة ذكاء عربي تحوّل الرسائل إلى إجراءات ومهام قابلة للمراجعة. يضم المشروع:
