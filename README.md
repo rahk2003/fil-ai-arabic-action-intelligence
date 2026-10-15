@@ -4,7 +4,17 @@
 
 SDAIA Academy: [https://github.com/SDAIAAcademy](https://github.com/SDAIAAcademy)
 
-Project repository: [https://github.com/rahk2003/fil-ai-arabic-action-intelligence](https://github.com/rahk2003/fil-ai-arabic-action-intelligence)
+## ملخص سريع
+
+فِعل منصة ذكاء عربي تحوّل الرسائل إلى إجراءات ومهام قابلة للمراجعة. يضم المشروع:
+
+- واجهة React/TypeScript عربية RTL مع تقويم ميلادي ذكي.
+- FastAPI وSQLAlchemy مع SQLite افتراضيًا وPostgreSQL اختياريًا.
+- مقارنة فعلية بين TF-IDF + Logistic Regression وCAMeLBERT-DA المضبوط دقيقًا.
+- مطابقة سياقية باستخدام multilingual MiniLM مع تأكيد بشري قبل تعديل المهام.
+- سجل مهام وتغييرات وتصحيحات بشرية قابل للتدقيق.
+
+للتشغيل المحلي مباشرة، انتقل إلى [Full-stack quick start](#full-stack-quick-start-sqlite). للمنهجية وحدود النتائج، راجع [SDAIA submission readiness](#sdaia-submission-readiness) و[`docs/final_verification_report_ar.md`](docs/final_verification_report_ar.md).
 
 FI'L AI is a local Arabic NLP capstone platform for classifying messages and turning them into reviewable structured actions. It combines the preserved Python NLP pipeline with a React/TypeScript Arabic-first interface, a FastAPI REST service, and either SQLite or PostgreSQL. It supports Modern Standard Arabic and common Saudi expressions, extracts bounded date/time patterns, proposes links to earlier tasks, and stores only user-confirmed changes. It uses no paid API.
 
